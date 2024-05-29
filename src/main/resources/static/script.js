@@ -57,14 +57,16 @@ $(document).ready((e) => {
 		$("#name-title").html(`Welcome, <b>${name}</b>`)
 
 		connect();
+		
+		$('#name-value').val('')
 
 
 	})
 
 
 	$("#send-btn").click(() => {
-
 		sendMessage()
+		$('#message-value').val('')
 	})
 
 
